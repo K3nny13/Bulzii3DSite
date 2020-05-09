@@ -1,0 +1,10 @@
+:root {
+    --bg-color: #1C2E40;
+    --primary-color: #385C80;
+    --secondary-color: #548ABF;
+    --font-color: #DDDDFF;
+  }
+
+.nav {
+  background-color: var(--bg-color);
+}
