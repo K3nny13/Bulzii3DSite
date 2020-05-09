@@ -5,6 +5,17 @@
     --font-color: #DDDDFF;
   }
 
+@font-face {
+  font-family: Quicksand-M;
+  src: url(../fonts/Quicksand-Medium.ttf);
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: Quicksand-M;
+  color: var(--font-color);
+}
+
 nav {
   background-color: var(--primary-color);
 }
@@ -16,6 +27,19 @@ nav .brand-logo {
   transform: translate(0, -50%)
 }
 
+nav ul a {
+  font-size: 1.1rem;
+}
+
 .sidenav {
   width: 200px;
+  background-color: var(--primary-color);
+}
+
+.sidenav li > a {
+  color: var(--font-color);
+}
+
+.card-content {
+  background-color: var(--primary-color);
 }
