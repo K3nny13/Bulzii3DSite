@@ -5,6 +5,17 @@
     --font-color: #DDDDFF;
   }
 
-.nav {
-  background-color: var(--bg-color);
+nav {
+  background-color: var(--primary-color);
+}
+
+nav .brand-logo {
+  padding-left: 10px;
+  margin: 0;
+  top: 50%;
+  transform: translate(0, -50%)
+}
+
+.sidenav {
+  width: 200px;
 }

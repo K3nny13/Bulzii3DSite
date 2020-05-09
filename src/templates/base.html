@@ -11,8 +11,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
         media="screen,projection" />
     <!--Import custom.css-->
-    <link type="text/css" rel="stylesheet"
-        href="{% static 'css/custom.css' %}" />
+    <link type="text/css" rel="stylesheet" href="{% static 'css/custom.css' %}" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--JavaScript using defer-->
@@ -23,11 +22,15 @@
 <body>
 
     <nav>
-        <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">Logo</a>
+        <div class="nav-wrapper container">
+            <a href="#!" class="brand-logo valign-wrapper">
+                <img class="valign-wrapper responsive-img" src="{% static 'images/BuLzii-Logo-nav.png' %}"
+                    alt="BuLzii3D Logo">
+            </a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a class="{% if section == 'artwork' %}active{% endif %}"href="{% url 'artwork:artwork_list' %}">Artwork</a></li>
+                <li><a class="{% if section == 'artwork' %}active{% endif %}"
+                        href="{% url 'artwork:artwork_list' %}">Artwork</a></li>
             </ul>
         </div>
     </nav>
