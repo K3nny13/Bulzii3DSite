@@ -43,3 +43,7 @@ nav ul a {
 .card-content {
   background-color: var(--primary-color);
 }
+
+.page-footer {
+  background-color: var(--primary-color);
+}
